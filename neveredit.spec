@@ -1,12 +1,12 @@
 Summary:	Neveredit - editor for Neverwinter Nights game files
 Summary(pl):	Neveredit - edytor plików gry Neverwinter Nights
 Name:		neveredit
-Version:	0.3.1
+Version:	0.5
 Release:	0.1
 License:	GPL
 Group:		X11/Applicatiuons
 Source0:	http://dl.sourceforge.net/openknights/%{name}-%{version}.tar.gz
-# Source0-md5:	f9f9f4768e0f4df60a51c538ea82e40a
+# Source0-md5:	9dbe6c2f0aea0522422177fb394999c8
 Patch0:		%{name}-GTK2.patch
 BuildRequires:	libnw-devel
 BuildRequires:	wxGTK2-devel
@@ -32,7 +32,7 @@ jego formie jest wysoce prawdopodobne, ¿e zepsuje edytowane pliki.
 %prep
 %setup -q -n %{name}
 
-%patch0 -p1
+##%%patch0 -p1
 
 %build
 %{__libtoolize}
