@@ -25,7 +25,7 @@ stage likely do bad things to your files.
 Neveredit stara siê byæ edytorem plików gry Neverwinter Nights firmy
 Bioware. Byæ mo¿e pewnego dnia bêdzie mia³ funkcjonalno¶æ narzêdzi
 Bioware dla Windows a mo¿e nawet wiêcej. Aktualnie stara siê osi±gn±æ
-podstawow± funkcjonalno¶c edytora dla platform niewindowsowych.
+podstawow± funkcjonalno¶æ edytora dla platform niewindowsowych.
 Oznacza to, ¿e Neveredit jest wci±¿ programem klasy alfa i w obecnej
 jego formie jest wysoce prawdopodobne, ¿e zepsuje edytowane pliki.
 
