@@ -1,14 +1,14 @@
 Summary:	Neveredit - editor for Neverwinter Nights game files
 Summary(pl):	Neveredit - edytor plików gry Neverwinter Nights
 Name:		neveredit
-Version:	0.5
+Version:	0.6
 Release:	0.1
 License:	GPL
 Group:		X11/Applicatiuons
 Source0:	http://dl.sourceforge.net/openknights/%{name}-%{version}.tar.gz
-# Source0-md5:	9dbe6c2f0aea0522422177fb394999c8
+# Source0-md5:	7a93664ed51db65c005d82e75bf039f2
 Patch0:		%{name}-GTK2.patch
-BuildRequires:	libnw-devel
+##BuildRequires:	libnw-devel
 BuildRequires:	wxGTK2-devel
 URL:		http://openknights.sourceforge.net/
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -32,20 +32,9 @@ jego formie jest wysoce prawdopodobne, ¿e zepsuje edytowane pliki.
 %prep
 %setup -q -n %{name}
 
-##%%patch0 -p1
-
-%build
-%{__libtoolize}
-%{__aclocal}
-%{__autoheader}
-%{__automake}
-%{__autoconf}
-%configure
-%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
-
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+python setup.py install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
