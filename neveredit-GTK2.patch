@@ -1,0 +1,32 @@
+diff -Nur neveredit.org/Makefile.am neveredit/Makefile.am
+--- neveredit.org/Makefile.am	2003-09-03 06:04:04.000000000 +0200
++++ neveredit/Makefile.am	2004-02-03 13:47:01.559175824 +0100
+@@ -5,12 +5,12 @@
+ 			MODFile.h MODFile.cc NWNDataType.h
+ 
+ if WXGUI_STATIC
+-neveredit_CXXFLAGS = `wx-config --static --cxxflags`
+-neveredit_LDFLAGS = `wx-config --static --libs` -static
++neveredit_CXXFLAGS = `wxgtk2-2.4-config --static --cxxflags`
++neveredit_LDFLAGS = `wxgtk2-2.4-config --static --libs` -static
+ endif
+ if WXGUI_DYNAMIC
+-neveredit_CXXFLAGS = `wx-config --cxxflags`
+-neveredit_LDFLAGS = `wx-config --libs`
++neveredit_CXXFLAGS = `wxgtk2-2.4-config --cxxflags`
++neveredit_LDFLAGS = `wxgtk2-2.4-config --libs`
+ endif
+ 
+ INCLUDES = -I$(top_srcdir)
+diff -Nur neveredit.org/configure.in neveredit/configure.in
+--- neveredit.org/configure.in	2003-09-03 03:50:59.000000000 +0200
++++ neveredit/configure.in	2004-02-03 13:47:19.159500168 +0100
+@@ -19,7 +19,7 @@
+ AC_PROG_LIBTOOL
+ AC_PROG_RANLIB
+ 
+-AC_PATH_PROG([WXCONFIG],[wx-config],[none],[$PATH])
++AC_PATH_PROG([WXCONFIG],[wxgtk2-2.4-config],[none],[$PATH])
+ if test "$WXCONFIG" = "none"; then AC_MSG_ERROR("neveredit needs wxWindows"); fi
+ 
+ dnl Checks for libraries.
