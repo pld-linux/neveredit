@@ -5,7 +5,7 @@ Version:	0.7b2
 Release:	0.1
 License:	GPL
 Group:		X11/Applicatiuons
-Source0:	http://osdn.dl.sourceforge.net/openknights/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/openknights/%{name}-%{version}.tar.gz
 # Source0-md5:	36e1f8ed9aa258498f56ca9ec99bbb69
 Patch0:		%{name}-GTK2.patch
 URL:		http://openknights.sourceforge.net/
