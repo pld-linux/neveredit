@@ -1,0 +1,3 @@
+- fix build: use --root=$RPM_BUILD_ROOT
+- fix %files (removed bogus file, added missing %py_sitescriptdir)
+- added %doc, release 0.2
