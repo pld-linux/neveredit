@@ -1,5 +1,5 @@
 Summary:	Neveredit - editor for Neverwinter Nights game files
-Summary(pl):	Neveredit - edytor plików gry Neverwinter Nights
+Summary(pl.UTF-8):   Neveredit - edytor plikÃ³w gry Neverwinter Nights
 Name:		neveredit
 Version:	0.7b2
 Release:	0.2
@@ -21,13 +21,13 @@ achieve basic editing functionality on non-Windows platforms. This
 means that this is alpha quality software, and will at the current
 stage likely do bad things to your files.
 
-%description -l pl
-Neveredit stara siê byæ edytorem plików gry Neverwinter Nights firmy
-Bioware. Byæ mo¿e pewnego dnia bêdzie mia³ funkcjonalno¶æ narzêdzi
-Bioware dla Windows a mo¿e nawet wiêcej. Aktualnie stara siê osi±gn±æ
-podstawow± funkcjonalno¶æ edytora dla platform niewindowsowych.
-Oznacza to, ¿e Neveredit jest wci±¿ programem klasy alfa i w obecnej
-jego formie jest wysoce prawdopodobne, ¿e zepsuje modyfikowane pliki.
+%description -l pl.UTF-8
+Neveredit stara siÄ™ byÄ‡ edytorem plikÃ³w gry Neverwinter Nights firmy
+Bioware. ByÄ‡ moÅ¼e pewnego dnia bÄ™dzie miaÅ‚ funkcjonalnoÅ›Ä‡ narzÄ™dzi
+Bioware dla Windows a moÅ¼e nawet wiÄ™cej. Aktualnie stara siÄ™ osiÄ…gnÄ…Ä‡
+podstawowÄ… funkcjonalnoÅ›Ä‡ edytora dla platform niewindowsowych.
+Oznacza to, Å¼e Neveredit jest wciÄ…Å¼ programem klasy alfa i w obecnej
+jego formie jest wysoce prawdopodobne, Å¼e zepsuje modyfikowane pliki.
 
 %prep
 %setup -q -n %{name}
