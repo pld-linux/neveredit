@@ -1,5 +1,5 @@
 Summary:	Neveredit - editor for Neverwinter Nights game files
-Summary(pl.UTF-8):   Neveredit - edytor plików gry Neverwinter Nights
+Summary(pl.UTF-8):	Neveredit - edytor plików gry Neverwinter Nights
 Name:		neveredit
 Version:	0.7b2
 Release:	0.2
