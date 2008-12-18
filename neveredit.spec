@@ -10,10 +10,12 @@ Source0:	http://dl.sourceforge.net/neveredit/%{name}-%{version}%{_beta}.tar.gz
 # Source0-md5:	c768b17e501807da1d36a2039affb15d
 Patch0:		%{name}-GTK2.patch
 URL:		http://openknights.sourceforge.net/
-#BuildRequires:	libnw-devel
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
-BuildRequires:	wxGTK2-devel
+Requires:	python-Numeric
+Requires:	python-PyOpenGL
+Requires:	python-numarray
+Requires:	python-wxPython
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
