@@ -8,6 +8,8 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/neveredit/%{name}-%{version}%{_beta}.tar.gz
 # Source0-md5:	c768b17e501807da1d36a2039affb15d
+Source1:	%{name}.desktop
+Source2:	%{name}.png
 URL:		http://openknights.sourceforge.net/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
@@ -42,10 +44,14 @@ zepsuje modyfikowane pliki.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__python} setup.py install \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -54,5 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README*
 %attr(755,root,root) %{_bindir}/*
+%{_desktopdir}/%{name}.desktop
+%{_pixmapsdir}/%{name}.png
 %{py_sitescriptdir}/neveredit
 %{py_sitescriptdir}/*.egg-info
