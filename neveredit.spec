@@ -12,6 +12,7 @@ Patch0:		%{name}-GTK2.patch
 URL:		http://openknights.sourceforge.net/
 #BuildRequires:	libnw-devel
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
 BuildRequires:	wxGTK2-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
