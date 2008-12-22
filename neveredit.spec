@@ -10,7 +10,7 @@ Source0:	http://dl.sourceforge.net/neveredit/%{name}-%{version}%{_beta}.tar.gz
 # Source0-md5:	c768b17e501807da1d36a2039affb15d
 Source1:	%{name}.desktop
 Source2:	%{name}.png
-URL:		http://openknights.sourceforge.net/
+URL:		http://sourceforge.net/projects/neveredit/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 Requires:	python-Numeric
