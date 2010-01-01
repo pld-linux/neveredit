@@ -11,7 +11,7 @@ Patch0:		%{name}-GTK2.patch
 URL:		http://sourceforge.net/projects/neveredit/
 #BuildRequires:	libnw-devel
 BuildRequires:	wxGTK2-devel
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Neveredit strives to be an editor for files from Bioware's game
