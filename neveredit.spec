@@ -10,7 +10,7 @@ Source0:	http://dl.sourceforge.net/neveredit/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://sourceforge.net/projects/neveredit/
-BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 Requires:	python-Numeric
 Requires:	python-PyOpenGL
@@ -62,4 +62,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/%{name}.png
 %{py_sitescriptdir}/neveredit
+%if "%{py_ver}" > "2.4"
 %{py_sitescriptdir}/*.egg-info
+%endif
