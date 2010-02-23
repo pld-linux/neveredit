@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Neveredit
+Comment=Editor for Neverwinter Nights game files
+Comment[pl]=Edytor plików gry Neverwinter Nights
+Icon=neveredit
+Exec=neveredit
+Terminal=false
+Type=Application
+Categories=Game;
+# vi: encoding=utf-8
